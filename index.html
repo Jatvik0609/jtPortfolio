@@ -19,15 +19,15 @@
         <img src="img/Logo1.png" alt="" />
       </div>
       <div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul class="java">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="text-hlo">
         <div>
           <div>
@@ -49,11 +49,26 @@
       </div>
     </section>
 
-    <section>
+    <section class="about" id="about">
       <div>
-
+        <img src="img/20230129_150043.png" alt="" />
       </div>
+      <div>
+        <h1 class="name">About Me</h1>
+        <h3>About</h3>
+        <h2>Name: <snap class="text-about">Jatvik Tarpara</snap></h2>
+        <h2>Date of birth: <snap class="text-about">April 23,2003</snap></h2>
+        <h2>Address: <snap class="text-about">Gujarat,India</snap></h2>
+        <h2>zip code: <snap class="text-about">396001</snap></h2>
+        <h2>Email: <snap class="text-about">tarparajatvik@gmail.com</snap></h2>
+      </div>
+    </section>
 
+    <section class="contact">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </section>
 
     <script>
@@ -68,6 +83,11 @@
         }, 4000);
       };
       textLoad();
+
+      const header = document.querySelector("nav");
+      window.addEventListener("scroll", function () {
+        header.classList.toggle("sticky", this.window.scrollY > 100);
+      });
     </script>
   </body>
 </html>
