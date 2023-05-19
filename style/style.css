@@ -1,7 +1,11 @@
 * {
   margin: 0%;
   padding: 0%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  overflow: hidden;
 }
 
 nav {
@@ -40,25 +44,62 @@ nav ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.home .text {
-  margin: 160px 200px;
+.home .text-hlo {
+  margin: 120px 200px;
 }
 
-.home .text h3 {
+.home .text-hlo h3 {
   color: #f6b637;
   margin: 10px 0px;
   font-size: 14px;
 }
 
-.home .text h1 {
+.home .text-hlo h1 {
   font-size: 60px;
   padding: 0%;
 }
 
-.home .text .name{
+.home .text-hlo .name {
   color: #f6b637;
   font-size: 60px;
   font-weight: 800;
+}
+
+.container .text {
+  position: relative;
+  /* color: #f6b637; */
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+  color: #cecece;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.btn {
+  background-color: #f6b637;
+  color: #000000;
+  margin: 12px 0px;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-weight: 600;
 }
 
 

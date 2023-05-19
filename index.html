@@ -28,18 +28,50 @@
     </nav>
 
     <section class="home">
-      <div class="text">
+      <div class="text-hlo">
         <div>
           <div>
             <h3>HELLO</h3>
           </div>
-            <h1>I'm <snap class="name">Jatvik </snap></h1>
-            <h1><snap class="name">Tarpara</snap></h1>
+          <h1>I'm <snap class="name">Jatvik </snap></h1>
+          <h1><snap class="name">Tarpara</snap></h1>
+        </div>
+        <div class="container">
+          <span class="text first-text">A Web</span>
+          <span class="text sec-text"></span>
+        </div>
+        <div>
+          <button class="btn">Hire me</button>
         </div>
       </div>
       <div class="pic">
-        <img src="img/20230129_114707.png" alt="" />
+        <img src="img/20230129_114707.png" alt="img" />
       </div>
     </section>
+
+    <section>
+      <div>
+
+      </div>
+
+    </section>
+
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Freelancer";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Freelance1";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Freelance2";
+        }, 8000);
+      };
+
+      textLoad();
+    </script>
   </body>
 </html>
