@@ -124,7 +124,6 @@ nav ul a{
   font-weight: 600;
 }
 
-
 .home .pic img {
   margin-top: 78px;
   width: 618px;
@@ -233,6 +232,17 @@ nav ul a{
 a {
   text-decoration: none;
   color: #cecece;
+}
+
+.mind{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5{
+  color: #cecece;
+  margin-top: 180px;
 }
 
 .msg {
