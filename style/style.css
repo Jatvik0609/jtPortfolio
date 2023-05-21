@@ -6,7 +6,7 @@
   background-color: #000000;
 }
 
-body{
+body {
   /* overflow: hidden; */
 }
 
@@ -25,7 +25,7 @@ nav {
   transition: all 0.6;
 }
 
-.sticky{
+.sticky {
   /* background-color: #4070f4; */
   height: 70px;
   justify-content: center;
@@ -53,7 +53,7 @@ nav ul {
   padding: 0px 0px;
 }
 
-nav ul a{
+nav ul a {
   color: #cecece;
   text-decoration: none;
 }
@@ -63,7 +63,7 @@ nav ul a{
   color: #fff;
   height: 800px;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .home .text-hlo {
@@ -131,10 +131,10 @@ nav ul a{
 
 .home .pic img {
   /* margin-top: 78px; */
-  width: 74%;
+  width: 632px;
 }
 
-.about{
+.about {
   background-color: #000000;
   color: #fff;
   display: grid;
@@ -143,7 +143,7 @@ nav ul a{
   align-items: center;
 }
 
-.about img{
+.about img {
   width: 400px;
   margin: 100px 120px;
 }
@@ -175,13 +175,13 @@ nav ul a{
   left: 800px;
 }
 
-.contact{
+.contact {
   height: 600px;
   background-color: #000000;
   margin: 0px 140px;
 }
 
-.contact-text{
+.contact-text {
   justify-content: center;
   display: flex;
   color: #fff;
@@ -198,19 +198,19 @@ nav ul a{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.f{
+.f {
   display: flex;
   justify-content: center;
 }
 
-.box i{
+.box i {
   background-color: #1a1a1a;
   border: 10px solid #1a1a1a;
   border-radius: 50px;
   padding: 26px 16px;
 }
 
-.contact .box h2{
+.contact .box h2 {
   font-size: 22px;
   color: #cecece;
   display: flex;
@@ -227,7 +227,7 @@ nav ul a{
   font-size: 72px;
 }
 
-.contact .box h3{
+.contact .box h3 {
   font-size: 12px;
   color: #cecece;
   display: flex;
@@ -239,13 +239,13 @@ a {
   color: #cecece;
 }
 
-.mind{
+.mind {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h5{
+h5 {
   color: #cecece;
   margin-top: 180px;
 }
@@ -258,7 +258,7 @@ h5{
   margin: 80px;
 }
 
-.msg .img-2 img{
+.msg .img-2 img {
   width: 400px;
 }
 
@@ -272,12 +272,13 @@ h5{
   grid-template-columns: 1fr 1fr;
 }
 
-.msg-input{
-  background-color: #f8f9fa;
+.msg-input {
+  /* background-color: #f8f9fa; */
+  background-color: #a1a1a1;
   padding: 26px 20px;
 }
 
-.msg-input input{
+.msg-input input {
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -291,7 +292,7 @@ h5{
   border-color: #ced4da;
 }
 
-textarea{
+textarea {
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -306,7 +307,7 @@ textarea{
   border-color: #ced4da;
 }
 
-.msg .main .msg-input button{
+.msg .main .msg-input button {
   background-color: #f6b637;
   border-radius: 50px;
   padding: 10px 30px;
@@ -316,7 +317,7 @@ textarea{
   font-size: small;
 }
 
-.end{
+.end {
   height: 100px;
   color: #cecece;
   display: flex;
@@ -325,3 +326,724 @@ textarea{
   font-size: 8px;
 }
 
+@media only screen and (max-width: 1272px) {
+  .home .text-hlo {
+    margin: 200px 160px;
+  }
+}
+
+@media only screen and (max-width: 1337px) {
+  .home {
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .home .pic img {
+    width: 532px;
+  }
+
+  .home {
+    height: 700px;
+  }
+
+  .name {
+    margin-bottom: 100px;
+  }
+
+  .about img {
+    width: 350px;
+    margin: 100px 120px;
+  }
+
+  .about h3 {
+    font-size: 72px;
+    position: absolute;
+    top: 860px;
+    opacity: 20%;
+    left: 720px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1430px;
+    left: 478px;
+    color: #fff;
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 1272px) {
+  .home .text-hlo {
+    margin: 200px 140px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .home .pic img {
+    width: 432px;
+  }
+
+  .home {
+    height: 720px;
+  }
+
+  .home .text-hlo {
+    margin: 160px 140px;
+  }
+
+  .about h3 {
+    font-size: 72px;
+    position: absolute;
+    top: 830px;
+    opacity: 20%;
+    left: 680px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1430px;
+    left: 428px;
+    color: #fff;
+    font-size: 72px;
+  }
+
+  .box i {
+    padding: 16px 6px;
+  }
+
+  .contact .box h2 {
+    font-size: 18px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1450px;
+    left: 440px;
+  }
+
+  .contact .box h3 {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  .home .pic img {
+    width: 430px;
+  }
+
+  .home .text-hlo h3 {
+    margin: 10px 0px;
+    font-size: 12px;
+  }
+
+  .home .text-hlo h1 {
+    font-size: 42px;
+    padding: 0%;
+  }
+
+  .home .text-hlo .name {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (max-width: 1089px) {
+  h5 {
+    color: #cecece;
+    margin-top: 140px;
+  }
+
+  .msg {
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+  }
+
+  .msg .img-2 img {
+    width: 300px;
+  }
+
+  .msg-input input {
+    padding: 10px;
+    padding-right: 110px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ced4da;
+  }
+
+  textarea {
+    padding: 10px;
+    padding-right: 160px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .msg .main .msg-input button {
+    padding: 8px 28px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  .home .text-hlo {
+    margin: 200px 120px;
+  }
+
+  .about img {
+    width: 320px;
+    margin: 100px 120px;
+  }
+
+  .about h3 {
+    font-size: 72px;
+    position: absolute;
+    top: 860px;
+    opacity: 20%;
+    left: 680px;
+  }
+
+  .about h2 {
+    font-size: 14px;
+  }
+
+  .name {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 971px) {
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1400px;
+    left: 320px;
+    color: #fff;
+    font-size: 72px;
+  }
+
+  .contact {
+    height: 500px;
+    background-color: #000000;
+    margin: 0px 60px;
+  }
+
+  h5 {
+    color: #cecece;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  .home .pic img {
+    width: 480px;
+  }
+
+  .home {
+    height: 600px;
+  }
+
+  .home .text-hlo h3 {
+    margin: 0px 0px;
+    font-size: 10px;
+  }
+
+  .home .text-hlo h1 {
+    font-size: 36px;
+    padding: 0%;
+  }
+
+  .home .text-hlo .name {
+    font-size: 48px;
+  }
+
+  .text.first-text {
+    font-size: 14px;
+  }
+
+  .text.sec-text {
+    font-size: 14px;
+  }
+
+  .about img {
+    width: 300px;
+    margin: 100px 80px;
+  }
+
+  .about h3 {
+    font-size: 72px;
+    position: absolute;
+    top: 720px;
+    opacity: 20%;
+    left: 560px;
+  }
+
+  .about h2 {
+    font-size: 14px;
+  }
+
+  .name {
+    margin-bottom: 60px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1260px;
+    left: 320px;
+  }
+
+  .about {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home .pic img {
+    width: 452px;
+  }
+
+  .home {
+    height: 600px;
+  }
+
+  .home .pic {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h5 {
+    color: #cecece;
+    margin-top: 100px;
+  }
+
+  .msg {
+    height: 420px;
+    margin: 80px;
+  }
+
+  .msg .img-2 img {
+    width: 300px;
+  }
+
+  .msg-input input {
+    padding: 10px;
+    padding-right: 110px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ced4da;
+  }
+
+  textarea {
+    padding: 10px;
+    padding-right: 160px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .msg .main .msg-input button {
+    padding: 8px 28px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home .pic img {
+    width: 422px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .home .pic img {
+    width: 400px;
+  }
+
+  .home .text-hlo h3 {
+    margin: 0px 0px;
+    font-size: 10px;
+  }
+
+  .home .text-hlo h1 {
+    font-size: 30px;
+    padding: 0%;
+  }
+
+  .home .text-hlo .name {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .home .pic img {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .home .pic img {
+    width: 330px;
+  }
+
+  .home .text-hlo h3 {
+    margin: 0px 0px;
+    font-size: 10px;
+  }
+
+  .home .text-hlo h1 {
+    font-size: 28px;
+    padding: 0%;
+  }
+
+  .home .text-hlo .name {
+    font-size: 40px;
+  }
+
+  .about h3 {
+    font-size: 62px;
+    position: absolute;
+    top: 725px;
+    opacity: 20%;
+    left: 560px;
+  }
+
+  .box i {
+    padding: 16px 6px;
+  }
+
+  .contact .box h2 {
+    font-size: 14px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1220px;
+    left: 300px;
+  }
+
+  .contact .box h3 {
+    font-size: 8px;
+  }
+
+  .about h3 {
+    font-size: 62px;
+    position: absolute;
+    top: 725px;
+    opacity: 20%;
+    left: 520px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .home .pic {
+    display: none;
+  }
+
+  .home .text-hlo {
+    margin: 200px 100px;
+  }
+
+  .about img {
+    width: 300px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    margin-bottom: 0px;
+  }
+
+  .about img {
+    width: 250px;
+    margin: 0px 20px;
+  }
+
+  .about h1 {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+
+  .about h2 {
+    font-size: 12px;
+    margin: 20px 40px;
+  }
+
+  .about h3 {
+    font-size: 58px;
+    position: absolute;
+    top: 660px;
+    opacity: 20%;
+    left: 400px;
+  }
+
+  .home {
+    height: 540px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1160px;
+    left: 260px;
+    color: #fff;
+    font-size: 58px;
+  }
+
+  .contact {
+    margin: 0px 20px;
+  }
+
+  .msg {
+    margin: 40px;
+    height: 260px;
+  }
+
+  .msg .img-2 img {
+    width: 200px;
+  }
+
+  .msg-input input {
+    padding: 4px;
+    padding-right: 60px;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ced4da;
+    font-size: 10px;
+  }
+
+  textarea {
+    padding: 4px;
+    padding-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .msg .main .msg-input button {
+    padding: 4px 12px;
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .box i {
+    padding: 14px 4px;
+  }
+
+  .home .text-hlo h3 {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .home {
+    height: 450px;
+  }
+
+  .home .text-hlo h3 {
+    margin-top: 200px;
+  }
+
+  .contact .contact-text h1 {
+    margin: 20px;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 1070px;
+    left: 180px;
+    color: #fff;
+    font-size: 50px;
+  }
+
+  .contact .box h2 {
+    font-size: 18px;
+    color: #cecece;
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  .box i {
+    margin-top: 40px;
+  }
+
+  .contact .box h3 {
+    font-size: 10px;
+  }
+
+  .about img {
+    width: 200px;
+    margin: 100px 30px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .about h2 {
+    font-size: 10px;
+    margin: 20px 10px;
+  }
+
+  .about h3 {
+    font-size: 32px;
+    position: absolute;
+    top: 600px;
+    opacity: 20%;
+    left: 340px;
+  }
+
+  .contact .contact-text-1 h1 {
+    opacity: 14%;
+    position: absolute;
+    top: 980px;
+    left: 180px;
+    color: #fff;
+    font-size: 58px;
+  }
+
+  .about {
+    margin-top: 40px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 458px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+  }
+
+  .contact .contact-text-1 h1 {
+    display: none;
+  }
+
+  .about h3 {
+    display: none;
+  }
+
+  .about img {
+    width: 300px;
+    margin: 0%;
+  }
+
+  .about{
+    height: 700px;
+  }
+
+  .about {
+    margin-top: 120px;
+  }
+
+  .img-9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-9{
+    margin-left: 10px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  
+  .about h2 {
+    font-size: 14px;
+    margin: 16px 40px;
+  }
+
+  .contact {
+    height: 600px;
+  }
+
+  .contact .contact-text h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .msg .img-2 img {
+    width: 200px;
+  }
+
+  .msg .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .msg .img-2 {
+    display: flex;
+    justify-content: center;
+    background-color: #a1a1a1;
+  }
+
+  .msg {
+    height: 460px;
+    margin: 4px 4px;
+  }
+}
+
+
+@media only screen and (max-width: 426px) {
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    height: 960px;
+  }
+
+  .end {
+    font-size: 6px;
+  }
+}
