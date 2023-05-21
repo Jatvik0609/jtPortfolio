@@ -1046,4 +1046,9 @@ textarea {
   .end {
     font-size: 6px;
   }
+
+  h5 {
+    color: #cecece;
+    margin-bottom: 20px;
+  }
 }
