@@ -130,11 +130,18 @@
           <img src="img/IMG_20230516_114853.jpg" alt="" />
         </div>
         <div class="msg-input">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Message"></textarea>
-          <button>SEND MESSAGE</button>
+          <form action="https://formsubmit.co/tarparajatvik@gmail.com" method="POST">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://jatviksart.com/">
+          <input type="hidden" name="_subject" value="New submission!">
+          <input type="hidden" name="_autoresponse" value="Thank you for your response">
+          <input type="text" placeholder="Your Name" name="name" required/>
+          <input type="text" placeholder="Email Address" name="email" required/>
+          <input type="text" placeholder="Subject" name="subject" required/>
+          <textarea placeholder="Message" name="textarea" required></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
         </div>
       </div>
     </section>

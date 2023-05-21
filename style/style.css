@@ -278,6 +278,10 @@ h5 {
   padding: 26px 20px;
 }
 
+form {
+  background-color: #a1a1a1;
+}
+
 .msg-input input {
   display: flex;
   justify-content: center;
