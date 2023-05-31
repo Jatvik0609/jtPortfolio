@@ -147,19 +147,26 @@
       const text = document.querySelector(".sec-text");
 
       const textLoad = () => {
-        setTimeout(() => {
-          text.textContent = "Developer";
-        }, 0);
-        setTimeout(() => {
-          text.textContent = "Designer";
-        }, 4000);
+        const texts = ["Developer", "Designer"];
+        let index = 0;
+
+        const updateText = () => {
+          text.textContent = texts[index];
+          index = (index + 1) % texts.length;
+          setTimeout(updateText, 4000);
+        };
+
+        updateText();
       };
+
       textLoad();
 
       const header = document.querySelector("nav");
       window.addEventListener("scroll", function () {
         header.classList.toggle("sticky", this.window.scrollY > 100);
       });
+
+      
     </script>
   </body>
 </html>
